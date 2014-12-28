@@ -1,0 +1,22 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #009900;
+}
+.text-thin {
+    font-weight: 100;
+    font-size: 60px;
+}
+.text-muted {
+    color: #BCBBBB;
+}
+hr { 
+    display: block;
+    height: 2px;
+    background-color: #009900;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+a {
+   color: #999999;   
+}
