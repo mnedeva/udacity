@@ -1,74 +1,73 @@
 * {
-    font-family: Kalimati, Verdana, sans-serif;  
-    color: #666666;
+    font-family: Kalimati, Verdana, sans-serif;
+    color: #666;
     font-size: 16px;
 }
 
 img {
-    margin-bottom: 30px;  
+    margin-bottom: 30px;
     width: 374px;
     height: 373px;
 }
+
 .container {
     width: 1024px;
-    margin: 0px;
-    padding: 0px;
-}
-h1 {
-    font-size: 48px;
-    margin-top: 46px;
-    margin-left: 44px;
-    margin-right: 46px;   
-    margin-bottom: 30px;
-   
-}
-h2 {
-    color: #F07C17;
-    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
-.main-title {
+h1 {
+    font-size: 48px;
+    margin: 46px 46px 30px 44px;
+}
+
+h2 {
+    color: #f07c17;
+    font-weight: bold;
     font-size: 24px;
-    margin-left: 0px;
-    margin-top: -1px;
-    margin-bottom:30px;    
 }
+
+.main-title {    
+    margin: -1px 0 30px 0;
+}
+
 .title-features {
-    margin-top: -5px; 
-    margin-left: 0px;
-    margin-bottom: 35px;
+    margin: -5px 0 35px 0; 
 }
+
 .main-features {
-    padding: 35px 0px 0px 30px;
-    border: 1px solid #CCCCCC;
+    padding: 35px 0 0 30px;
+    border: 1px solid #ccc;
     height: 224px;
     width: 374px;
 }
 
 .main-features ul li {
-    margin: 10px 0px;
+    margin: 10px 0;
 }
+
 .col-md-4 {
     width: 375px;
     margin-left: 42px;
-    padding: 0px;
+    padding: 0;
 }
 
 .col-md-8 {
     margin-left: 29px;
-    padding: 0px;
+    padding: 0;
     width: 535px;
 }
 
 .col-md-12 {
-    padding: 0px;
+    padding: 0;
 }
+
 .row {
-    margin: 0px;
+    margin: 0;
 }
 
 .text-container {
-    padding: 0px 0px 0px 0px;
+    padding: 0;
     line-height: 32px;
     letter-spacing: -0.2px;
 }
