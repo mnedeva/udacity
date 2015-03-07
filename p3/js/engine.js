@@ -77,6 +77,7 @@ var Engine = (function(global) {
             win.requestAnimationFrame(main); 
        } else {       
             if (this.lives == 0) {
+                allEnemies = allEnemies.slice(0,3);
                 ctx.clearRect(0,0, canvas.width, canvas.height);
                 canvas.style.border = "1px solid black";
                 ctx.fillStyle = "#f00"; 
