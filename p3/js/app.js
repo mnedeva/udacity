@@ -21,7 +21,6 @@ Enemy.prototype.update = function(dt) {
         this.x = 0;
     }    
     this.x += (this.speed + level*2 + Math.floor(Math.random()*50 +10))*dt;
-
 }
 
 // Draw the enemy on the screen, required method for game
@@ -29,8 +28,6 @@ Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 }
 Enemy.prototype.reset = function () {
-
-
 }
 // Now write your own player class
 // This class requires an update(), render() and
@@ -43,8 +40,6 @@ var Player = function(){
 
 Player.prototype.checkCollisions = function(allEnemies, additionalEntity){
         var $this = this;
-        
-        
      
         allEnemies.forEach(function(enemy) {
             if (enemy.y -45  < $this.y && $this.y < enemy.y + 45 && 
@@ -72,22 +67,20 @@ Player.prototype.checkCollisions = function(allEnemies, additionalEntity){
                 additionalEntity.hide();
                 points += 50;
                 return true;
-            }
-            
+            }            
         }       
         
     return true;
 }
 
-Player.prototype.render = function(){
-    
+Player.prototype.render = function(){    
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 }
 
 Player.prototype.update = function(dt){
-   
-    
 }
+
+
 Player.prototype.reset = function () {
     this.x = 200;
     this.y = 400;

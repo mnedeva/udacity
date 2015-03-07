@@ -27,8 +27,7 @@ var Engine = (function(global) {
         level = 1,
         points =0,
         lives = 3,
-        stopped = true,
-        bonusActive;
+        stopped = true;
         
     canvas.width = 505;
     canvas.height = 606;
@@ -204,29 +203,6 @@ var Engine = (function(global) {
             }            
         }
     }
-
-
-    function renderBonus() {
-        /* This array holds the relative URL to the image used
-         * for that particular row of the game level.
-         */
-        var rowImages = [
-                'images/Gem Blue.png',
-                'images/Gem Green.png', 
-                'images/Gem Orange.png',
-                'images/Heart.png'
-            ];
-        if (!this.bonusActive) {   
-            setTimeout(function(){
-                ctx.drawImage(Resources.get(rowImages[Math.floor(Math.random()*3)]), 
-                Math.floor(Math.random()*5) * 101, 
-                Math.floor(Math.random()*3+1) * 72);
-                this.bonusActive = true;
-            }, Math.floor(Math.random()*5000+1000));
-        }
-
-    }
-
     /* This function initially draws the "game level", it will then call
      * the renderEntities function. Remember, this function is called every
      * game tick (or loop of the game engine) because that's how games work -
